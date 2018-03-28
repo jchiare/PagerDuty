@@ -10,8 +10,8 @@ import time
 # authentication token, incident ID, and "from" email address
 auth_token = raw_input("Enter full REST API v2 key: ")
 incident_id = raw_input("Enter incident ID please: ")
-from_email = raw_input("Enter 'from' email address: ")
-limit_amount = int(raw_input("Enter the limit variable (how many alerts to resolve per API call): "))
+from_email = raw_input("Enter 'from' email address: (has to match an existing users' login) ")
+limit_amount = int(raw_input("Enter the limit parameter (how many alerts to resolve per API call): "))
 
 # Whip up the HTTPS request session
 request = requests.Session()
